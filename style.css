@@ -1,0 +1,11 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/cidadeimg.jpeg);
+  background-position: right;
+  background-size: cover;
+  background-color: #0009;
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+}
