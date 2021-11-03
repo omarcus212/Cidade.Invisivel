@@ -1,0 +1,56 @@
+header {
+  position: relative;
+  background-color: #0005;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header .logo {
+  padding-top: 20px;
+}
+.menu ul {
+  display: flex;
+  float: left;
+  list-style: none;
+  gap: 30px;
+}
+.menu li {
+  display: inline-flex;
+  position: relative;
+  float: left;
+}
+.menu li > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+.menu a:hover {
+  color: red;
+}
+
+/* sub menu */
+
+.dropdonw-submenu {
+  display: flex-none;
+  position: absolute;
+  list-style: none;
+  top: 60px;
+  width: 100px;
+  height: 150px;
+  gap: 5px;
+}
+
+.dropdonw-submenu {
+  padding-right: 20px;
+}
+.dropdonw-submenu {
+  background-color: black;
+  justify-items: flex-end;
+  padding-left: 0px;
+  padding-right: 30px;
+}
