@@ -1,8 +1,7 @@
 header {
-  position: relative;
+  display: flex;
   background-color: #0005;
   height: 100px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 30px;
@@ -11,46 +10,48 @@ header {
 header .logo {
   padding-top: 20px;
 }
-.menu ul {
+.dropdowm-menu ul {
   display: flex;
-  float: left;
+  float: none;
   list-style: none;
-  gap: 30px;
+  gap: 15px;
+  align-items: center;
 }
-.menu li {
-  display: inline-flex;
+
+.dropdowm-menu ul > a {
+  align-items: center;
+  display: flex;
   position: relative;
   float: left;
 }
-.menu li > a {
+.dropdowm-menu a {
+  display: block;
+  position: relative;
   color: white;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   transition: color 0.5s;
 }
-.menu a:hover {
+.dropdowm-menu a:hover {
   color: red;
 }
 
 /* sub menu */
 
-.dropdonw-submenu {
-  display: flex-none;
+.dropdowm-submenu li > a {
+  display: ruby;
   position: absolute;
-  list-style: none;
-  top: 60px;
+  margin-top: 5px;
+  gap: 10px;
+}
+.dropdowm-submenu {
+  margin-top: 5px;
+  position: absolute;
+  flex-direction: column;
+  background-color: rgba(2, 2, 2, 0.425);
   width: 100px;
-  height: 150px;
-  gap: 5px;
-}
-
-.dropdonw-submenu {
-  padding-right: 20px;
-}
-.dropdonw-submenu {
-  background-color: black;
-  justify-items: flex-end;
+  height: 100px;
+  padding-right: 90px;
   padding-left: 0px;
-  padding-right: 30px;
 }
