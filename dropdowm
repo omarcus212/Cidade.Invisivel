@@ -1,0 +1,45 @@
+.dropdowm-menu ul {
+  display: flex;
+  float: none;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+}
+
+.dropdowm-menu ul > a {
+  align-items: center;
+  display: flex;
+  position: relative;
+  float: left;
+}
+.dropdowm-menu a {
+  display: block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+.dropdowm-menu a:hover {
+  color: red;
+}
+
+/* sub menu */
+
+.dropdowm-submenu li > a {
+  display: flex;
+  position: absolute;
+  margin-top: 5px;
+  gap: 10px;
+}
+.dropdowm-submenu {
+  margin-top: 5px;
+  position: absolute;
+  flex-direction: column;
+  background-color: rgba(2, 2, 2, 0.425);
+  width: 100px;
+  height: 100px;
+  padding-right: 90px;
+  padding-left: 0px;
+}
